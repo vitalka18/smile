@@ -1,0 +1,42 @@
+.media-list {
+  @include clr;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    width: 65px;
+    height: 65px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    width: 65px;
+    height: 65px;
+    padding: 3px 5px;
+    border: 1px solid $light;
+    color: $red;
+    font-size: 24px;
+    line-height: 58px;
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &.active {
+      border-color: $yellow;
+      outline: none;
+    }
+
+    &:active {
+      opacity: .8;
+    }
+
+    .icon-3d {
+      font-size: 30px;
+    }
+  }
+}

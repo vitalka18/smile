@@ -1,0 +1,38 @@
+.l-container {
+  @include clr;
+}
+
+.l-card {
+  &__col-1 {
+    width: 500px;
+    padding: 4px 0 0;
+    float: left;
+  }
+
+  &__col-2 {
+    width: 790px;
+    padding-left: 90px;
+    float: left;
+  }
+
+  &__col-3 {
+    width: 330px;
+    padding-top: 18px;
+    padding-left: 30px;
+    float: left;
+  }
+
+  &__col-4 {
+    width: 300px;
+    margin-left: 60px;
+    float: right;
+  }
+}
+
+.l-media {
+  margin-bottom: 15px;
+}
+
+.l-normalize {
+  padding: 0 15px;
+}

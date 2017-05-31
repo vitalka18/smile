@@ -1,0 +1,16 @@
+.location {
+  @include clr;
+  font-size: 13px;
+
+  &__label {
+    padding: 14px 18px 15px 15px;
+    float: left;
+    color: $header-location;
+  }
+
+  &__switcher {
+    float: left;
+    border-right: 1px solid $light-grey;
+    border-left: 1px solid $light-grey;
+  }
+}

@@ -1,0 +1,77 @@
+.header {
+  &__callback {
+    padding: 35px 0 37px;
+  }
+
+  &__lang-switcher {
+    margin: 0 70px 0 116px;
+
+    .nav__item {
+      margin-right: 25px;
+    }
+  }
+
+  &__left {
+    float: left;
+  }
+
+  &__main {
+    @include clr;
+  }
+
+  &__main-func {
+    padding: 15px 0 20px;
+  }
+
+  &__numbers {
+    margin-right: 10px;
+    padding: 42px 0;
+
+    [class^="icon-"] {
+      display: inline-block;
+      position: relative;
+      top: 2px;
+      margin: 0;
+      padding: 2px 6px;
+      color: $dark-grey;
+      font-size: 14px;
+      cursor: pointer;
+      vertical-align: top;
+
+      &:hover,
+      &:focus {
+        color: $red;
+      }
+    }
+  }
+
+  &__phone-link {
+    color: $dark-grey;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  &__primary-nav {
+    height: 54px;
+    background: $header-primary-bg;
+    color: $light;
+  }
+
+  &__right {
+    float: right;
+  }
+
+  &__search-panel {
+    margin: 0 33px;
+    padding: 32px 0 31px;
+  }
+
+  &__top {
+    background: $header-top-bg;
+  }
+
+  &__top-inner {
+    @include clr;
+  }
+}

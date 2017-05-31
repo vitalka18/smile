@@ -1,0 +1,501 @@
+.aside-box {
+  position: relative;
+  padding: 40px 50px 20px;
+  border: 1px solid $light-grey-border;
+  background: $light;
+
+  & + & { margin-top: 30px; }
+
+  &__header {
+    top: -15px;
+
+    h3 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1;
+    }
+  }
+
+  &__foot {
+    bottom: -16px;
+    height: 20px;
+    font-size: 13px;
+  }
+
+  &__outer-desc {
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  &__outer-desc-inside {
+    display: inline-block;
+    max-width: 80%;
+    padding: 3px 15px;
+    background: $light;
+  }
+
+  &__show-all {
+    margin-top: 20px;
+    font-size: 13px;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 700;
+
+    [class^="icon-"] { margin-right: 10px; }
+  }
+
+  &_success {
+    border-color: $success-bg;
+    background: $success-bg;
+  }
+
+  &_size_sm {
+    padding: 25px 30px 30px;
+  }
+
+  &_size_m {
+    padding: 25px 47px;
+  }
+}
+
+.badge {
+  display: inline-block;
+  min-width: 16px;
+  height: 16px;
+  padding: 3px;
+  border-radius: 8px;
+  background: $red;
+  color: $light;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.brand {
+  display: block;
+  padding: 32px 36px 17px;
+  background: $yellow;
+}
+
+.brand-text {
+  transition: color $anim-duration;
+  color: $brand-color;
+  font-size: 16px;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $light;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.collapse {
+  display: none;
+  font-size: 13px;
+
+  &.in { display: block; }
+  tr {
+    &.in { display: table-row; }
+  }
+}
+
+tbody.collapse {
+  &.in { display: table-row-group; }
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  transition: height ease .35s, visibility ease .35s;
+  overflow: hidden;
+}
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.estimate {
+  &__btn {
+    margin-left: 9px;
+    padding: 0;
+    transition: opacity ease $anim-duration;
+    border: 0;
+    outline: none;
+    background: none;
+    font-weight: 700;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: .7;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &__good {
+    color: $success;
+  }
+
+  &__bad {
+    color: $error;
+  }
+
+  &__text {
+    display: inline-block;
+    margin: 0;
+  }
+
+  [class^="icon-"] {
+    margin-right: 5px;
+    color: $dark-grey;
+    font-size: 16px;
+    vertical-align: middle;
+  }
+
+  .icon-hand-fail {
+    vertical-align: top;
+  }
+}
+
+.fade {
+  transition: opacity .15s linear;
+  opacity: 0;
+
+  &.in {
+    opacity: 1;
+  }
+}
+
+.goods-code {
+  position: relative;
+  padding: 8px 11px 10px 16px;
+  float: right;
+  background: $yellow;
+  color: $dark-grey;
+  font-size: 13px;
+  overflow: hidden;
+
+  &:before {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -7px;
+    width: 15px;
+    height: 15px;
+    margin: auto;
+    border-radius: 50%;
+    background: $light;
+    content: '';
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.link {
+  display: inline-block;
+  outline: none;
+  color: $dark-grey;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $red;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $grey;
+  }
+
+  &_underline {
+    text-decoration: underline;
+
+    [class^="icon-"] {
+      display: inline-block;
+      margin-right: 8px;
+      color: $red;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+
+  &_dotted-red {
+    border-bottom: 1px dotted $red;
+    color: $red;
+
+    &:visited {
+      color: $red;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: transparent;
+      color: $red;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: $grey;
+    }
+  }
+
+  &_dotted-grey {
+    border-bottom: 1px dotted $dark-grey;
+    color: $dark-grey;
+
+    &:visited {
+      color: $dark-grey;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: transparent;
+      color: $dark-grey;
+      text-decoration: none;
+    }
+
+    &:active {
+      color: $red;
+    }
+  }
+
+  &_icon-rotate {
+    [class^="icon-"] {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.link-icon {
+  display: inline-block;
+  margin-right: 10px;
+  outline: none;
+  color: $grey;
+  text-decoration: none;
+
+  [class^="icon-"] {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+
+  &__text {
+    display: inline-block;
+    margin-left: 3px;
+    text-decoration: underline;
+    vertical-align: middle;
+  }
+
+  &:hover,
+  &:focus {
+    color: $red;
+    .link-icon__text { text-decoration: none; }
+  }
+
+  &:active {
+    .link-icon__text { color: $dark-grey; }
+  }
+
+  &_action {
+    margin-right: 30px;
+    color: $dark-grey;
+    font-size: 13px;
+
+    [class^="icon-"] {
+      font-size: 20px;
+    }
+
+    .link-icon__text {
+      margin-left: 8px;
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:focus {
+      .link-icon__text { text-decoration: underline; }
+    }
+
+    &:active {
+      .link-icon__text { color: $grey; }
+    }
+  }
+}
+
+.main {
+  padding-bottom: 80px;
+}
+
+.modal-3d {
+  width: 700px;
+  height: 500px;
+  text-align: center;
+  font-size: 2em;
+}
+
+.out {
+  min-width: 1320px;
+}
+
+.page-head {
+  @include clr;
+  margin-bottom: 22px;
+
+  .page-title {
+    max-width: 1000px;
+    margin: 0;
+    float: left;
+  }
+}
+
+
+.price {
+  color: $dark-grey;
+  font-size: 700px;
+  font-size: 40px;
+
+  + .price { margin-left: 10px; }
+
+  &_old {
+    color: $orange;
+    text-decoration: line-through;
+  }
+
+  .price__currency {
+    display: inline-block;
+    margin-left: .2em;
+    font-size: .5em;
+  }
+}
+
+.social {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  margin: 0 20px 20px 0;
+  transition: opacity $anim-duration;
+  border: 1px solid $light;
+  border-radius: 50%;
+  color: $light;
+  font-size: 16px;
+  line-height: 42px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: top;
+
+  &:hover,
+  &:focus {
+    opacity: .7;
+  }
+
+  [class^="icon-"] {
+    line-height: 42px;
+  }
+
+  &_fb {
+    border-color: $social-facebook;
+    color: $social-facebook;
+  }
+
+  &_tw {
+    border-color: $social-twitter;
+    color: $social-twitter;
+  }
+
+  &_gp {
+    border-color: $social-google;
+    color: $social-google;
+  }
+
+  &_vk {
+    border-color: $social-vk;
+    color: $social-vk;
+  }
+
+  &_yt {
+    border-color: $social-youtube;
+    color: $social-youtube;
+  }
+
+  &_in {
+    border: 0;
+    background: url('../img/instagram.png') center no-repeat;
+  }
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  overflow: hidden;
+}
+
+.status {
+  font-size: 13px;
+
+  &_success {
+    color: $success;
+  }
+
+  &_error {
+    color: $red;
+  }
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  tr {
+    font-size: 13px;
+  }
+
+  td {
+    padding: 12px 23px;
+  }
+
+  &_striped {
+    tr {
+      &:nth-child(odd) td {
+        background: $table-bg;
+      }
+    }
+  }
+
+  &_characteristic {
+    td {
+      &:nth-child(2n + 1) {
+        width: 55%;
+      }
+
+      &:nth-child(2n + 2) {
+        width: 45%;
+      }
+    }
+  }
+}

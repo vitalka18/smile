@@ -1,0 +1,79 @@
+.card-page {
+  &__buy-also {
+    margin-bottom: 64px;
+  }
+
+  &__btns {
+    margin-bottom: 25px;
+  }
+
+  &__choose-also {
+    margin-bottom: 58px;
+  }
+
+  &__desc {
+    margin-bottom: 40px;
+    color: $grey;
+    font-size: 12px;
+    line-height: 1.2;
+
+    p {
+      margin-bottom: 10px;
+
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+
+  &__goods-status,
+  &__goods-rating,
+  &__goods-comment-btn,
+  &__goods-question-btn {
+    display: inline-block;
+    margin-right: 20px;
+    margin-left: 0;
+    line-height: 1;
+    vertical-align: middle;
+  }
+
+  &__goods-rating {
+    color: $yellow;
+  }
+
+  &__goods-status {
+    font-weight: 700;
+  }
+
+  &__main-desc {
+    margin-bottom: 71px;
+  }
+
+  &__minor-info {
+    margin-bottom: 35px;
+    font-size: 13px;
+  }
+
+  &__price {
+    margin-bottom: 15px;
+    font-weight: 700;
+  }
+
+  &__similar__goods {
+    margin-bottom: 42px;
+  }
+
+  &__tab {
+    margin-bottom: 70px;
+  }
+
+  .goods-code {
+    margin-top: 5px;
+  }
+
+  &_not-available {
+    .card-page {
+      &__price {
+        .price { color: $light-grey; }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.goods-gallery {
+  &__items {
+    width: 150px;
+    float: left;
+  }
+
+  &__preview {
+    margin-left: 200px;
+    text-align: center;
+
+    a { display: block; }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+  }
+}

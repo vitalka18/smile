@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/proxima_nova_regular-webfont.woff2') format('woff2'),
+       url('fonts/proxima_nova_regular-webfont.woff') format('woff'),
+       url('fonts/proxima_nova_regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova';
+  src: url('fonts/proxima_nova_bold-webfont.woff2') format('woff2'),
+       url('fonts/proxima_nova_bold-webfont.woff') format('woff'),
+       url('fonts/proxima_nova_bold-webfont.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+body {
+  border: 0;
+  background: $default-bg;
+  color: $dark-grey;
+  font-family: 'Proxima Nova', 'Helvetica';
+  font-weight: normal;
+  line-height: 1.4;
+}
+
+*,
+:after,
+:before { box-sizing: inherit; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin: .5em 0 1em;
+}
+
+h1,
+.h1 { font-size: 3.4em; }
+
+h2,
+.h2 { font-size: 2.8em; }
+
+h3,
+.h3 { font-size: 2em; }
+
+h4,
+.h4 { font-size: 1.8em; }
+
+h5,
+.h5 { font-size: 1.6em; }
+
+h6,
+.h6 { font-size: 1.4em; }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+select::-ms-expand {
+  display: none;
+}

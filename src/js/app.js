@@ -1,0 +1,10 @@
+//=include ../lib/jquery/dist/jquery.js
+//=include ./libs/transition.js
+//=include ./libs/tab.js
+//=include ./libs/collapse.js
+//=include ./libs/dropdown.js
+//=include ../lib/threesixty-slider/dist/threesixty.min.js
+//=include ../lib/fancybox/dist/jquery.fancybox.min.js
+//=include ../lib/slick-carousel/slick/slick.min.js
+//=include ../lib/jquery-bar-rating/jquery.barrating.js
+//=include common.js

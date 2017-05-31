@@ -1,0 +1,151 @@
+.btn {
+  display: inline-block;
+  position: relative;
+  padding: 8px 20px;
+  transition: border-color ease-in-out $anim-duration,
+              background ease-in-out $anim-duration,
+              box-shadow ease-in-out $anim-duration;
+  border: 2px solid $button-border-default;
+  outline: none;
+  background: $light;
+  color: $dark-grey;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-tap-highlight-color: transparent;
+
+  &:focus,
+  &:hover,
+  &.active {
+    border-color: $button-border;
+    color: $button-color-hover;
+    box-shadow: 0 0 8px $button-bg-hover;
+    z-index: 2;
+  }
+
+  &:active {
+    background: $form-field-shadow-focus;
+    box-shadow: inset 0 1px 1px $shadow-inset,
+                0 0 8px $button-bg-active;
+  }
+
+  &_size_m {
+    padding: 12px 40px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &_size_sm {
+    padding: 7px 15px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &_thin {
+    border-width: 1px;
+  }
+
+  &_two-line {
+    padding: 5px 25px;
+    line-height: 1;
+  }
+
+
+  &_theme_sun {
+    border-color: $button-sun-border;
+
+    &:hover,
+    &:focus,
+    &.active {
+      border-color: $button-sun-border;
+      background: $button-sun-bg-hover;
+      box-shadow: 0 0 8px $button-sun-bg-hover;
+    }
+
+    &:active {
+      background: $button-sun-bg-active;
+      box-shadow: inset 0 1px 1px $shadow-inset,
+                  0 0 8px$button-sun-bg-active;
+    }
+  }
+
+
+  &_theme_info {
+    border-color: $button-info-border;
+
+    &:hover,
+    &:focus,
+    &.active {
+      border-color: $button-info-border;
+      background: $button-info-bg-hover;
+    }
+
+    &:active {
+      background: $button-info-bg-active;
+    }
+  }
+
+  &_theme_forest {
+    border-color: $button-forest-bg;
+    background: $button-forest-bg;
+
+    &:hover,
+    &:focus,
+    &.active {
+      border-color: $button-forest-bg;
+      background: $light;
+    }
+  }
+
+  &_theme_mars {
+    padding-right: 37px;
+    padding-left: 37px;
+    border-color: $button-mars-border;
+    background: $button-mars-bg;
+    color: $light;
+
+    &:hover,
+    &:focus,
+    &.active {
+      border-color: darken($button-mars-bg, 15%);
+      background: darken($button-mars-bg, 15%);
+      color: $light;
+    }
+
+    &:active {
+      border-color: $button-mars-border;
+      background: $button-mars-bg;
+      color: $light;
+    }
+
+    &.btn_light {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+  }
+}
+
+.btn-group {
+  display: inline-block;
+  position: relative;
+
+  .btn {
+    float: left;
+
+    + .btn {
+      margin-left: -2px;
+
+      &_thin {
+        margin-left: -1px;
+      }
+    }
+  }
+
+  &_w170 {
+    .btn { min-width: 170px; }
+  }
+}

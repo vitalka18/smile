@@ -1,0 +1,63 @@
+$article-height: 236px;
+
+.article {
+  @include clr;
+  background: $light;
+
+  &__img {
+    width: 306px;
+    height: $article-height;
+    float: left;
+    overflow: hidden;
+
+    img {
+      min-width: 100%;
+      min-height: 100%;
+    }
+  }
+
+  &__body {
+    height: $article-height;
+    margin-left: 306px;
+    padding: 24px 28px 29px;
+    border: 1px solid $light-grey-border;
+  }
+
+  &__text {
+    height: (14 * 1.4 * 4px);
+    color: $grey;
+    font-size: 14px;
+    overflow: hidden;
+  }
+
+  &__time {
+    display: block;
+    margin: 0 0 5px;
+    color: $lighter-grey;
+    font-size: 12px;
+  }
+
+  &__title {
+    margin: 0 0 12px;
+    font-size: 20px;
+    line-height: 1.2;
+
+    a {
+      color: $dark-grey;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+
+      &:active {
+        color: $grey;
+      }
+
+      &:visited {
+        color: $purpure;
+      }
+    }
+  }
+}

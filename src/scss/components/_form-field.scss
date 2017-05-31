@@ -1,0 +1,38 @@
+.form-field {
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 10px 12px;
+  transition: border-color ease-in-out $anim-duration,
+              box-shadow ease-in-out $anim-duration;
+  border: 1px solid $form-field-border;
+  background-color: $light;
+  background-image: none;
+  font-size: 14px;
+  line-height: 1.42857143;
+
+  &:focus {
+    border-color: $form-field-border-focus;
+    outline: none;
+    box-shadow: inset 0 1px 1px $form-field-shadow-inset,
+                0 0 8px $form-field-shadow-focus;
+  }
+
+  &_no-border {
+    border-color: $light;
+  }
+
+  &_size_m {
+    height: 52px;
+    padding: 15px 12px;
+  }
+}
+
+select.form-field {
+  padding-right: 45px;
+  background-image: url('../img/select-arrow.png');
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  appearance: none;
+  user-select: none;
+}

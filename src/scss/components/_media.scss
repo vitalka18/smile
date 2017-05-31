@@ -1,0 +1,103 @@
+.media {
+  @include clr;
+  margin-bottom: -1px;
+  padding: 24px 30px 26px;
+  border: 1px solid $yellow;
+
+  &__advantages {
+    margin: 0 0 14px;
+
+    dt {
+      display: inline-block;
+      margin-right: 10px;
+      color: $success;
+      font-weight: 700;
+    }
+
+    dd {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+
+  &__author {
+    margin: 0 24px 0 0;
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__body {
+    width: 717px;
+    padding-right: 25px;
+    float: left;
+    border-right: 1px solid $light-grey-border;
+  }
+
+  &__content {
+    margin-bottom: 13px;
+    line-height: 1.56;
+
+    p {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__disadvantages {
+    margin: 0 0 13px;
+
+    dt {
+      display: inline-block;
+      margin-right: 10px;
+      color: $error;
+      font-weight: 700;
+    }
+
+    dd {
+      display: inline-block;
+      margin: 0;
+    }
+  }
+
+  &__estimated {
+    float: right;
+  }
+
+  &__foot {
+    @include clr;
+  }
+
+  &__head {
+    @include clr;
+    margin-bottom: 10px;
+  }
+
+  &__mark {
+    width: 145px;
+    padding-top: 6px;
+    padding-left: 24px;
+    float: right;
+
+    h5 {
+      margin: 0 0 .5em;
+      font-size: 16px;
+      line-height: 1;
+    }
+  }
+
+  &__time {
+    position: relative;
+    top: 2px;
+    float: left;
+    color: $lighter-grey;
+    font-size: 13px;
+  }
+
+  &__toolbar {
+    float: left;
+
+    .link {
+      margin-right: 32px;
+    }
+  }
+}

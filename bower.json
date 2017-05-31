@@ -1,0 +1,25 @@
+{
+  "name": "gulp-template",
+  "description": "gulp template",
+  "main": "index.html",
+  "authors": [
+    "vitaliy kriskov"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.3",
+    "slick-carousel": "^1.6.0",
+    "fancybox": "^3.0.47",
+    "jquery-bar-rating": "^1.2.2",
+    "spritespin": "^3.4.3"
+  }
+}

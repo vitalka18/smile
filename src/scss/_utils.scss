@@ -1,0 +1,42 @@
+.u-color-success {
+  color: $success;
+}
+
+.u-color-error {
+  color: $error;
+}
+
+.u-left {
+  float: left;
+}
+
+.u-right {
+  float: right;
+}
+
+.u-text {
+  font-size: 13px;
+  line-height: 1.6;
+
+  p {
+    margin-bottom: 25px;
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+.u-mb-30 {
+  margin-bottom: 30px;
+}
+
+.u-size-210by300 {
+  width: 210px;
+  height: 300px;
+}
+
+.u-size-450by290 {
+  width: 448px;
+  height: 290px;
+}

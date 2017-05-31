@@ -1,0 +1,41 @@
+@font-face
+	font-family: "svgfont"
+	src: url('fonts/svgfont.eot')
+	src: url('fonts/svgfont.eot?#iefix') format('eot'), url('fonts/svgfont.woff') format('woff'), url('fonts/svgfont.woff2') format('woff2'), url('fonts/svgfont.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+$icon-five: "\EA01"
+$icon-six: "\EA02"
+$icon-one: "\EA0A"
+$icon-two: "\EA0B"
+$icon-three: "\EA0C"
+$icon-four: "\EA0D"
+
+
+%icon
+	font-family: "svgfont"
+	font-style: normal
+	font-weight: normal
+	text-rendering: auto
+	speak: none
+	line-height: 1
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.icon, [class^="icon-"], [class*=" icon-"]
+	@extend %icon
+	display: inline-block
+
+.icon-five:before
+	content: $icon-five
+.icon-six:before
+	content: $icon-six
+.icon-one:before
+	content: $icon-one
+.icon-two:before
+	content: $icon-two
+.icon-three:before
+	content: $icon-three
+.icon-four:before
+	content: $icon-four

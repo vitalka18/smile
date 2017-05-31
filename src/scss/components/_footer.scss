@@ -1,0 +1,81 @@
+.footer {
+  background: linear-gradient(to right, $footer-left-bg 0%, $footer-left-bg 50%, $footer-right-bg 50%, $footer-right-bg 100%);
+  color: $light;
+  font-size: 13px;
+
+  &__col-1 { width: 187px; padding-right: 10px;}
+
+  &__col-2 { width: 189px; padding-right: 10px;}
+
+  &__col-3 { width: 203px; padding-right: 10px;}
+
+  &__col-4 { width: 204px; padding-right: 10px;}
+
+  &__col-5 { width: 190px; padding-right: 10px;}
+
+  &__copyright {
+    @include clr;
+    padding: 25px 0;
+    border-top: 1px solid $footer-border;
+    color: $footer-copy-color;
+    font-size: 14px;
+
+    small {
+      font-size: 100%;
+    }
+  }
+
+  &__inner {
+    @include clr;
+  }
+
+  &__left {
+    width: 1010px;
+    padding-right: 35px;
+    float: left;
+    background: $footer-left-bg;
+  }
+
+  &__nav {
+    @include clr;
+    padding: 43px 0 30px;
+  }
+
+  &__nav-title {
+    margin: 0 0 10px;
+    font-size: 16px;
+  }
+
+  &__number {
+    margin-bottom: 50px;
+    color: $footer-number;
+
+    a {
+      color: $light;
+      font-size: 23px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    p {
+      margin: 7px 0 0;
+    }
+  }
+
+  &__right {
+    width: 280px;
+    padding: 40px 0 10px 70px;
+    float: right;
+  }
+
+  &__social-network {
+    color: $footer-network;
+  }
+
+  &__social-list {
+    p {
+      color: $footer-network;
+      font-size: 14px;
+    }
+  }
+}

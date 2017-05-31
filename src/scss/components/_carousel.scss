@@ -1,0 +1,154 @@
+.carousel {
+  position: relative;
+
+  &__body {
+    position: relative;
+    margin: 0 -15px;
+  }
+
+  &__btn {
+    display: block;
+    width: 45px;
+    height: 45px;
+    padding: 0;
+    float: left;
+    border: 1px solid $carousel-btn-bg;
+    outline: none;
+    background: $carousel-btn-bg;
+    color: $light;
+    font-size: 30px;
+    line-height: 45px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background: $carousel-btn-bg-hover;
+    }
+
+    &:active {
+      background: $carousel-btn-bg;
+    }
+  }
+
+  &__btn_right {
+    height: 50%;
+    float: none;
+    font-weight: normal;
+  }
+
+  &__control-bar {
+    @include clr;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    &_right-fixed {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 45px;
+      z-index: 5;
+    }
+  }
+
+  &__head {
+    @include clr;
+    position: relative;
+    min-height: 45px;
+    margin-bottom: 18px;
+    padding-right: 100px;
+  }
+
+  &__item {
+    padding: 0 15px;
+  }
+
+  &__tab {
+    margin-top: 10px;
+  }
+
+  &__title {
+    margin: 0;
+  }
+
+  &_bordered {
+    .carousel {
+      &__body {
+        margin: 0;
+        border: 3px solid $grey-border;
+      }
+
+      &__item {
+        width: 238px;
+        padding: 20px;
+        border-right: 3px solid $grey-border;
+      }
+
+      &__control-bar_right-fixed {
+        top: -3px;
+        right: -3px;
+        bottom: -3px;
+      }
+    }
+  }
+
+  &_has-link {
+    .carousel {
+      &__head {
+        @include clr;
+        margin-bottom: 0;
+      }
+
+      &__title {
+        float: left;
+      }
+
+      &__link {
+        margin: 9px 0 0 60px;
+        float: left;
+        font-size: 16px;
+
+        .icon-angle-right {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+
+  &_has-select {
+    .carousel {
+      &__head {
+        @include clr;
+      }
+
+      &__title {
+        float: left;
+      }
+
+      &__select {
+        width: 265px;
+        margin-left: 30px;
+        float: left;
+      }
+    }
+  }
+
+  &_has-tab {
+    .carousel {
+      &__control-bar {
+        top: -65px;
+        right: 15px;
+      }
+    }
+  }
+}
+
+
+
+.article-carousel {
+  &__item {
+    width: 720px;
+    padding-right: 30px;
+  }
+}

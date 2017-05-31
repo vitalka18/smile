@@ -1,0 +1,63 @@
+.primary-search {
+  width: 350px;
+
+  &__group {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 46px;
+    border-collapse: separate;
+  }
+
+  &__field {
+    position: relative;
+    width: 100%;
+    height: 46px;
+    margin-bottom: 0;
+    padding: 10px 0 10px 20px;
+    float: left;
+    border-radius: 23px 0 0 23px;
+    border-color: $primary-search-border;
+    border-right-color: transparent;
+    outline: 0;
+    font-size: 13px;
+    z-index: 2;
+  }
+
+  &__addon {
+    position: relative;
+    width: 1%;
+    font-size: 0;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+
+  &__field,
+  &__addon {
+    display: table-cell;
+  }
+
+  &__btn {
+    height: 46px;
+    padding: 14px 20px 10px;
+    border: 1px solid $primary-search-border;
+    border-radius: 0 23px 23px 0;
+    border-left-color: transparent;
+    outline: 0;
+    font-size: 16px;
+
+    &:hover,
+    &:focus,
+    &.active {
+      border-color: $button-sun-border;
+      background: $button-sun-bg-hover;
+      box-shadow: 0 0 8px $button-sun-bg-hover;
+    }
+
+    &:active {
+      background: $button-sun-bg-active;
+      box-shadow: inset 0 1px 1px $shadow-inset,
+                  0 0 8px$button-sun-bg-active;
+    }
+  }
+}
